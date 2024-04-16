@@ -1,0 +1,62 @@
+
+/*----------formulaire----------*/ 
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 100px;
+}
+form {
+    position: relative;
+    width: 600px;
+    padding: 40px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    flex-direction: column;
+    border-radius: 20px;
+}
+h2 {
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    color: #fb911f;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+input{
+    width: 500px;
+    height: 60px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+}
+::placeholder {
+    color: #fff;
+}  
+textarea {
+    padding: 10px; 
+    font-size: 16px;
+}
+input[type="submit"] {
+    display: inline-block;
+    background: #fb911f;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+input[type="submit"]:hover{
+    color: #555;
+    background-color: #fff;
+}
