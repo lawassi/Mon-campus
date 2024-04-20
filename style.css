@@ -1,62 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 
-/*----------formulaire----------*/ 
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 80px;
-    padding: 100px;
+body {
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/207153/pexels-photo-207153.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
 }
-form {
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-style: 1rem;
+}
+
+a:hover {
+    color: rgb(57, 232, 188);
+}
+
+header {
     position: relative;
-    width: 600px;
-    padding: 40px;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
-    flex-direction: column;
-    border-radius: 20px;
+    padding: 0 2rem;
+    background-color: rgba(47, 0, 255, 0.177);
 }
-h2 {
-    width: 500px;
-    height: 50px;
-    text-align: center;
-    color: #fb911f;
-    font-size: 20px;
-    background: #fff;
-    border-radius: 20px;
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .burger-menu-button {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    background-color: rgb(57, 232, 188);
+    color: blue;
+    border: 1px solid rgb(57, 232, 188);
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.pro {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.pro:hover {
+    background-color: #fff;
+    color: blue;
+    
+}
+
+/*---------BURGER MENU -----*/
+
+.burger-menu {
+    display: none;
+    height: 0;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blue (15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.burger-menu.open {
+    height: 310px;
+}
+
+.burger-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    height: 1px;
+    background-color: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.3rem;
+}
+
+.burger-menu .action-button {
+    width: 80%;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.buttons-burger-menu {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-input{
-    width: 500px;
-    height: 60px;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    color: #fff;
-    font-size: 15px;
+
+/* ------------ RESPONSIVE---------- */
+
+@media (max-width: 999px) {
+    header{
+        background: none;
+    }
+
+    .navbar .links,
+    .navbar .action-button {
+        display: none;
+    }
+
+    .navbar .burger-menu-button {
+        display: block;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
 }
-::placeholder {
-    color: #fff;
-}  
-textarea {
-    padding: 10px; 
-    font-size: 16px;
-}
-input[type="submit"] {
-    display: inline-block;
-    background: #fb911f;
-    color: #fff;
-    border-radius: 20px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    margin-top: 30px;
-    border: none;
-    transition: 0.5s;
-    cursor: pointer;
-} 
-input[type="submit"]:hover{
-    color: #555;
-    background-color: #fff;
+
+@media (max-width: 576px) {
+
+    .burger-menu {
+        left: 2rem;
+        width: unset;
+    }
+
 }
