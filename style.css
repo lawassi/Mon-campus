@@ -49,12 +49,20 @@ header {
 .navbar .links {
     display: flex;
     gap: 2rem;
+    position: relative;
+}
+.navbar .links ul{
+    display: none;
+    gap: 2rem;
+    position: absolute
 }
 
+
 .navbar .burger-menu-button {
-    color: #fff;
-    font-size: 1.5rem;
+    color: #0f0526;
+    font-size: 1.7rem;
     cursor: pointer;
+    
 }
 
 .buttons {
@@ -171,3 +179,29 @@ header {
     }
 
 }
+
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #222538;
+    padding: 0px;
+    
+    border-radius: 0px 0px 12px 12px;
+}
+.navbar .links li:hover ul {
+    display: block;
+}
+
+.submenu li{
+    border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    width: 270px;
+}
+
+
+

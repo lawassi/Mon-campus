@@ -25,8 +25,23 @@
                 </a>
             </div>
             <ul class="links">
-                <li><a href="index.html">Acceuil</a></li>
-                <li><a href="#">Cours</a></li>
+                <li><a href="index.html">Acceuil</a>
+                    <ul class="submenu">
+                        <li><a href="#">Cours</a></li>
+                        <li><a href="#">A PROPOS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">EXERCICES</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cours</a>
+                    <ul class="u_submenu">
+                        <li><a href="#">FORMATION</a></li>
+                        <li><a href="#">JAVASCRIPT</a></li>
+                        <li><a href="#">PYTHON</a></li>
+                        <li><a href="#">AUTRES</a></li>
+                    </ul>
+                        
+                </li>
                 <li><a href="#">A propos</a></li>
                 <li><a href="contacte.html">Contact</a></li>
             </ul>
@@ -41,7 +56,15 @@
         <div class="burger-menu ">
             <ul class="links">
                 <li><a href="index.html">Acceuil</a></li>
-                <li><a href="#">Cours</a></li>
+                <li><a href="#mainrefe">Cours</a>
+                    <ul class="submenu">
+                        <li><a href="#"></a>FORMATION</li>
+                        <li><a href="#"></a>JAVASCRIPT</li>
+                        <li><a href="#"></a>PYTHON</li>
+                        <li><a href="#"></a>AUTRES</li>
+                    </ul>
+                
+                </li>
                 <li><a href="#">A propos</a></li>
                 <li><a href="contacte.html">Contact</a></li>
                 <div class="divider"></div>
@@ -60,7 +83,7 @@
     <article>
         <!-- Horizontal slideur-->
         <div class="slider-container slider-1">
-            <div class="slider">
+            <div id="mainrefe" class="slider">
                 <p>HTML - CSS</p>
                 <p>JAVASCRIPT</p>
                 <p>PYTHON </p>
@@ -96,31 +119,38 @@ NB: notez bien que ce site-web est encore en construction.
 <!-- menu footeur-->
 <footer>
     <div class="container">
-        <div class="footer-content">
-            <h3>Contact Us</h3>
+        <div  class="footer-content">
+            <h3 id="adre">Contact Us</h3>
             <p>Email: lawassi@yahoo.com</p>
             <p>Phone: +49--</p>
             <p>Address: Europaplatz</p>
+            <p><a href="#qlinks">Quick Links</a></p>
+            <p><a href="#smedia">Follow Us</a></p>
         </div>
         <div class="footer-content">
             <h3>Quick Links</h3>
-             <ul class="list">
+             <ul id="qlinks" class="list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="contacte.html">Contact</a></li>
+                <li><a href="contacte.html">About</a></li>
+                <li><a href="#mainrefe">Services</a></li>
+                <li><a href="#mainrefe">Products</a></li>
+                <li><a href="#adre">Contact Us</a></li>
+                
              </ul>
+             <p><a href="#smedia">Follow Us</a></p>
         </div>
         <div class="footer-content">
             <h3>Follow Us</h3>
-            <ul class="social-icons">
-             <li><a href="https:www.facebook.com/lawassi1"><i class="fab fa-facebook"></i></a></li>
-             <li><a href=""><i class="fab fa-twitter"></i></a></li>
-             <li><a href=""><i class="fab fa-instagram"></i></a></li>
-             <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <ul id="smedia" class="social-icons">
+                <li><a href="https:www.facebook.com/lawassi1"><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                
             </ul>
-            </div>
+            <p><a href="#adre">Contact us</a></p>
+            <p><a href="#qlinks">Quick Links</a></p>
+        </div>
     </div>
     <div class="bottom-bar">
         <p>&copy; 2024 topcampus.de . All rights reserved</p>
