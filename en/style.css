@@ -9,6 +9,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    background: url('backg_bubble.html') no-repeat top center / cover;
 }
 
 ul{
@@ -31,7 +32,7 @@ section{
     position: relative;
     height: calc(100vh - 3rem);
     width: 100%;
-    background: url('en/backg_bubble.html') no-repeat top center / cover;
+    
     overflow: hidden;
 }
 
