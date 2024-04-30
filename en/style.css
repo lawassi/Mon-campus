@@ -9,7 +9,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    background: url('backg_bubble.html') no-repeat top center / cover;
+    background: url('/en/backg_bubble.html') no-repeat top center / cover;
 }
 
 ul{
