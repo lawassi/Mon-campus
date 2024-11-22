@@ -26,8 +26,8 @@ a{
 }
 
 header{
-    position: relative;
-   margin-top: -650px;
+    position: absolute;
+    margin-top: -40rem;
     background-color: #60b4df;
     width: 100%;
     z-index: 1000;
