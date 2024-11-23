@@ -10,24 +10,17 @@ body{
     font-family: 'Poppins', sans-serif;
   
   display: flex;
-  position: relative;
+  
   min-height: 100vh;
   background: #050505;
   align-items: center;
-  margin: 16rem;
-}
-
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
+  margin: 16rem ;
+  
 }
 
 header{
-    position: absolute;
-    margin-top: -40rem;
+    position: relative;
+   top: -400px;
     background-color: #60b4df;
     width: 100%;
     z-index: 1000;
@@ -48,6 +41,13 @@ section{
     top: 0;
     left: 0;
     background-color: rgb(56, 165, 238, 0.5);
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 .container{
@@ -455,13 +455,17 @@ section{
 
 /* This is 3 cube stylecube */
 
-
+.wrapper3cubes {
+  position: relative;
+  width: 100%;
+  
+}
 
 .wrapper,
 .wrapper-2,
 .wrapper-3 {
   position: absolute;
-   top: 0;
+   top: 10;
   
 }
 .cube {
