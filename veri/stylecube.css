@@ -20,7 +20,7 @@ body{
 
 header{
     position: relative;
-   top: -400px;
+   top: -715px;
     background-color: #60b4df;
     width: 100%;
     z-index: 1000;
@@ -465,7 +465,7 @@ a{
 .wrapper-2,
 .wrapper-3 {
   position: absolute;
-   top: 10;
+   top: 8rem;
   
 }
 .cube {
@@ -503,6 +503,9 @@ a{
   }
 }
 
+.bildl {
+  background: url('pic_landry.jpg') 200px 250px;
+}
 .top {
   position: absolute;
   top: 0;
@@ -512,6 +515,7 @@ a{
   background: #222;
   transform: rotateX(90deg) translateZ(150px);
 }
+
 .top::before {
   content: '';
   top: 0;
