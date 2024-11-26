@@ -1,0 +1,8 @@
+
+body {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  background: #050505;
+  align-items: center;
+}
