@@ -7,7 +7,7 @@
   position: absolute;
   cursor: pointer;
   background-color: black;
-  
+  height: 90px;
 }
 
 .container-b1 a {
@@ -17,7 +17,7 @@
 }
 .container-b1 i {
   margin-left: 5px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   transition: all .5s;
 }
 
@@ -27,11 +27,11 @@
 
 .bgb1 {
   position: absolute;
-  bottom: 0px;
+  bottom: 3px;
   left: -14px;
   border-radius: 10px;
-  width: 50%;
-  height: 35%;
+  width: 40%;
+  height: 60%;
   z-index: 0;
   background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
   transition: all .5s;
@@ -44,7 +44,8 @@
 
 .b1text {
   z-index: 1;
-  padding: 2px;
-  margin: 2px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.5rem;
 }
 
