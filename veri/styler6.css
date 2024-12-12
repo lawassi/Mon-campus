@@ -4,39 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
-.logo-f{
-	flex: 3;
-    display: flex;
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: 100;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    line-height: 3rem;
-	justify-content: space-between;
-}
-
-
-.foot-f-a{
-    color: #fff;
-}
-
-
-.wrapper{
-	min-height: 100vh;
-	font-family: 'Poppins', sans-serif;
-	padding: 15px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	gap: 15px;
-	font-size: 20px;
-  
-}
-
-
 .header, .footer, .content1, .content2>div>div{
 	flex:1;
 	display: flex;
@@ -46,13 +13,7 @@
 }
 
 
-.main-container{
-	flex: 6;
-	display: flex;
-	flex-direction: space-between;
-    flex-wrap: wrap;
-	gap: 15px;
-}
+
 
 .content2{
 	flex: 1;
@@ -87,7 +48,7 @@
 	}
 	
 	.footer{
-		min-height: 110px;
+		
 	}
 }
 
