@@ -9,6 +9,11 @@ body {
 }
 
 .wrapper{
+	width: 90%;
+	overflow:  hidden;
+	background: lavender;
+	margin: 20px auto;
+	
 	
 	min-height: 100vh;
 	font-family: 'Poppins', sans-serif;
@@ -26,9 +31,11 @@ body {
 header{
     position: sticky;
     top: 0px;
-    background-color: #4C48B1;
+    background: #4C48B1;
     width: 100%;
     z-index: 1000;
+	margin: 20px;
+	margin-right: 50px;
 }
 
 /*main-container{
@@ -39,6 +46,12 @@ header{
 	gap: 15px;
 }
 */
+.espace1-top {
+	height: 100px;
+}
+.espace2-cube {
+	height: 0px;
+}
 .espace2 {
 	height: 200px;
 }
