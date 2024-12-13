@@ -29,8 +29,10 @@ body {
 }
 .wrapper div {
 	padding: 0px;
-	margin: 10px;
+	margin: 12px;
+	margin-right: 50px;
 	width: 20%;
+	
 }
 /*
 .wrapper div div {
@@ -45,7 +47,7 @@ body {
 .title{
 	
 	height: 50px;
-	line-height: 30px;
+	line-height: 20px;
 	background: white;
 	text-align: center;
 	box-sizing: border-box;
