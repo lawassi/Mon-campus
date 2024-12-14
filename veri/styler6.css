@@ -31,14 +31,14 @@
     	flex-wrap: wrap;
 	flex-direction: column;
 	gap: 10px;
-	width:310px;
+	width:300px;
 	
 	height: 300px;
 	
 }
 .content2>ol>li{
 
-	width:350px;
+	width:320px;
 	
 }
 
