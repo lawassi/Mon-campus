@@ -28,10 +28,11 @@
 	flex: 1;
 	display: flex;
 	justify-content: space-between;
-    flex-wrap: wrap;
+    	flex-wrap: wrap;
+	flex-direction: column;
 	gap: 10px;
-	width:330px;
-	float: left;
+	width:310px;
+	
 	height: 300px;
 	
 }
