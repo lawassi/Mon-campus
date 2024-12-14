@@ -9,11 +9,12 @@ body {
 }
 
 .wrapper{
-	width: 95%;
+	width: 93%;
 	overflow:  hidden;
 	background: lavender;
 	margin: 20px auto;
-	padding: 20px 0px;
+	padding: 0px 0px;
+	margin-right: 30px;
 	
 	min-height: 100vh;
 	font-family: 'Poppins', sans-serif;
