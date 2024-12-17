@@ -1,0 +1,175 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	/*
+	min-height: 100vh;
+	background: #050505;*/
+	justify-items: center;
+	align-items: center;
+	
+}
+
+.container_a {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 15px;
+	
+	
+	gap: 10px;
+	font-weight: 5px;
+	font-family: sans-serif;
+	color: #fff;
+	
+}
+.container_a>div{
+	flex: 70%;
+}
+
+.subContainer_a {
+	display: flex;
+	flex-wrap: wrap;	
+	gap: 10px;
+}
+
+.content1 {
+	flex: 1;
+	background: rgb(75, 186, 75);
+	
+}
+
+.main_cont_a{
+	flex: 4;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.main_cont_a>div{
+	flex: 70%;
+	
+}
+
+.header {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	min-height: 50px;
+	border-radius: 3px;
+	background: #000;
+	margin-right: 80px;
+	z-index: 1000;
+}
+
+.main_a {
+	min-height: 50px;
+}
+
+.cont_a{
+	
+	min-height: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	
+}
+
+.cont_a>div{
+		
+}
+
+.cont_a1, .cont_a2, .cont_a3{
+	min-height: 50px;
+	
+	flex: 1;
+	background: rgb(100, 104, 104);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	
+	
+	
+}
+
+
+.footer_a{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	
+	flex: 100%;
+	background-color: #ccc;
+	min-height: 50px;
+	color: #fff;
+	justify-content: space-evenly;
+
+}
+
+.content1, .main_a, .cont_a>div {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	border-radius: 3px;	
+	
+}
+
+@media only screen and (max-width: 768px){
+	.container_a{
+		
+		flex-direction: column;
+	}
+
+	.subContainer_a{
+		
+		flex-direction: column;
+	}
+
+	.content1{
+		min-height: 50px;
+	}
+}
+
+@media only screen and (max-width: 550px){
+	.cont_a>div{
+		flex: 100%;
+		
+		
+	}
+	
+		.cont_a>div>{
+		flex: 100%;
+		font-size: 1rem;
+		margin-right: 40px;
+	}
+	
+	.cont_a1, .cont_a2, .cont_a3{
+		min-height: 50px;
+		
+	}
+	
+}
+
+.cont_a_title{
+	width: 380px;
+	height: 40px;
+	line-height: 20px;
+	background: white;
+	text-align: center;
+
+	color: #000;
+	text-transform: uppercase;
+		
+}
+.cont_a_texte_1{
+	font-size: 0.7em;
+}
+
+.cont_a_texte_b{
+
+}

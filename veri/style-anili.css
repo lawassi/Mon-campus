@@ -8,7 +8,7 @@
 
 	
 .ol{
-    width: 150px;
+    
     list-style: none;
 }
 .olf {
@@ -24,9 +24,10 @@
 }
 
 ol li {
-    font-size: 1.2rem;
-    padding: 20px 30px;
-    margin: 10px 0;
+	width: 380px;
+    font-size: 1rem;
+    padding: 10px 5px;
+    margin: 5px 8px;
     background: rgb(23, 23, 23);
     z-index: 5;
     position: relative;
@@ -45,7 +46,7 @@ ol li::before {
     transition: all .4s;
 }
 ol li:hover::before {
-    width: 100%;
+    width: 80%;
 }
 
 ol li:nth-child(1)::before {
