@@ -64,7 +64,7 @@ body{
 	min-height: 50px;
 	border-radius: 3px;
 	background: #000;
-	margin-right: 80px;
+	margin-right: 90px;
 	z-index: 1000;
 }
 
@@ -140,13 +140,9 @@ body{
 	.cont_a>div{
 		flex: 100%;
 		
-		
-	}
-	
-		.cont_a>div>{
 		flex: 100%;
 		font-size: 1rem;
-		margin-right: 40px;
+		margin-right: 60px;
 	}
 	
 	.cont_a1, .cont_a2, .cont_a3{
