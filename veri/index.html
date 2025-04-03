@@ -1,11 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="fr">
 
 <head>
-	<!--
-	<script type="text/javascript">
-	</script>
-	-->
 	<title>veritocrate.de</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +18,32 @@
 	<link rel="stylesheet" href="style-button-1.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .cookie-slide-in {
+            animation: slideIn 0.5s ease-out forwards;
+        }
+        
+        .cookie-slide-out {
+            animation: slideOut 0.5s ease-in forwards;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes slideOut {
+            from { transform: translateY(0); opacity: 1; }
+            to { transform: translateY(100%); opacity: 0; }
+        }
+        
+        #cookieConsent {
+            box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>    
+	
 </head>
 
 <body>
@@ -243,8 +265,86 @@
 				</a>
 			</div>								
 		</div> <!-- footer FIN-->
-		
-		
+			
+	    <!-- Bandeau de consentement aux cookies -->
+	    <div id="cookieConsent" class="fixed bottom-0 left-0 right-0 bg-white p-4 md:p-6 border-t border-gray-200 hidden cookie-slide-in z-50">
+		<div class="max-w-6xl mx-auto">
+		    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+			<div class="flex-1">
+			    <div class="flex items-start gap-3">
+				<div class="bg-blue-100 p-2 rounded-full">
+				    <i class="fas fa-cookie-bite text-blue-600 text-xl"></i>
+				</div>
+				<div>
+				    <h3 class="font-bold text-gray-800">Vie privée et cookies</h3>
+				    <p class="text-sm text-gray-600 mt-1">
+					Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant, vous acceptez notre utilisation des cookies conformément à notre politique.
+				    </p>
+				</div>
+			    </div>
+			</div>
+			<div class="flex items-center gap-3">
+			    <button id="cookieDecline" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors">
+				Refuser
+			    </button>
+			    <button id="cookieAccept" class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors">
+				Accepter
+			    </button>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	
+	    <script>
+		document.addEventListener('DOMContentLoaded', function() {
+		    const cookieConsent = document.getElementById('cookieConsent');
+		    const cookieAccept = document.getElementById('cookieAccept');
+		    const cookieDecline = document.getElementById('cookieDecline');
+		    
+		    // Vérifier si le consentement a déjà été donné
+		    const consentGiven = localStorage.getItem('cookieConsent');
+		    
+		    if (consentGiven === null) {
+			// Afficher le bandeau après un léger délai
+			setTimeout(() => {
+			    cookieConsent.classList.remove('hidden');
+			}, 1000);
+		    }
+		    
+		    // Gérer l'acceptation
+		    cookieAccept.addEventListener('click', function() {
+			localStorage.setItem('cookieConsent', 'accepted');
+			cookieConsent.classList.add('cookie-slide-out');
+			setTimeout(() => {
+			    cookieConsent.classList.add('hidden');
+			}, 500);
+		    });
+		    
+		    // Gérer le refus
+		    cookieDecline.addEventListener('click', function() {
+			localStorage.setItem('cookieConsent', 'declined');
+			cookieConsent.classList.add('cookie-slide-out');
+			setTimeout(() => {
+			    cookieConsent.classList.add('hidden');
+			}, 500);
+		    });
+		    
+		    // Si vous avez besoin d'exécuter du code basé sur le consentement
+		    function checkCookieConsent() {
+			const consent = localStorage.getItem('cookieConsent');
+			if (consent === 'accepted') {
+			    // Charger les scripts de suivi ou autres cookies ici
+			    console.log('Cookies acceptés - Chargement des scripts');
+			} else {
+			    console.log('Cookies refusés - Scripts non chargés');
+			}
+		    }
+		    
+		    // Appeler cette fonction quand nécessaire
+		    checkCookieConsent();
+		});
+	    </script>
+		<!-- FIN de Bandeau de consentement aux cookies -->		
 
 	</body>
 </html>
